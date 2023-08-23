@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="#" onsubmit="completeOrder(event)">
+        <label for="number">Price</label>
+        <input type="number" id="cost">
+        <label for="text">Product Name</label>
+        <input type="text" id="name">
+       
+       
+        <label for="option">Cotegory:</label>
+        <select name="Cotegory" id="cat">
+            <option value="Electronic">Electronic</option>
+            <option value="Food">Food</option>
+            <option value="SkinCare">SkinCare</option>
+        </select>
+        <input type="submit">
+    </form>
+
+    <h3>Electronics</h3>
+    <ol id="Electro"></ol>
+
+    <h3>Foods</h3>
+    <ol id="food"></ol>
+
+    <h3>SkinCare</h3>
+    <ol id="skin"></ol>
+
+
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+
+</body>
+</html>
